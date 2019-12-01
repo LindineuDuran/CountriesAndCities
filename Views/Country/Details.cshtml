@@ -1,0 +1,130 @@
+﻿@model CountriesAndCities.Models.Country
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Country</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Continent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Continent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Region)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Region)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SurfaceArea)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SurfaceArea)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IndepYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IndepYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Population)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Population)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LifeExpectancy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LifeExpectancy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GNP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GNP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GNPOld)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GNPOld)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LocalName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocalName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GovernmentForm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GovernmentForm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HeadOfState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeadOfState)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Capital)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Capital)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Code2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Code2)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

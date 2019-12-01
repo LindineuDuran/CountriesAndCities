@@ -1,0 +1,136 @@
+﻿@model CountriesAndCities.Models.Country
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Country</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Continent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Continent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Region)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Region)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SurfaceArea)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SurfaceArea)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IndepYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IndepYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Population)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Population)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LifeExpectancy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LifeExpectancy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GNP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GNP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GNPOld)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GNPOld)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LocalName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocalName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GovernmentForm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GovernmentForm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HeadOfState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeadOfState)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Capital)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Capital)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Code2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Code2)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
